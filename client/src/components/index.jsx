@@ -17,7 +17,7 @@ const Dashboard = () => {
             name, price, supplier_info, mfgDate
         }
 
-        const itemResponse = await fetch('http://localhost:8000/item/add', {
+        const itemResponse = await fetch('https://managementsystem-68l4.onrender.com/item/add', {
             method: 'POST',
             body: JSON.stringify(itemObject),
             headers: {
